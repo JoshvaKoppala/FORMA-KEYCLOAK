@@ -4,6 +4,10 @@ ENV KC_HEALTH_ENABLED=true
 ENV KC_METRICS_ENABLED=true
 ENV KC_DB=postgres
 
+
+ENV KEYCLOAK_ADMIN=admin
+ENV KEYCLOAK_ADMIN_PASSWORD=admin
+
 WORKDIR /opt/keycloak
 RUN /opt/keycloak/bin/kc.sh build
 
